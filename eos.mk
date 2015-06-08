@@ -14,7 +14,7 @@
 
 $(call inherit-product, device/yu/lettuce/full_lettuce.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common EOS stuff.
 $(call inherit-product, vendor/eos/config/common_full_phone.mk)
 
 PRODUCT_NAME := eos_lettuce
@@ -26,3 +26,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-micromax
 TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
 TARGET_VENDOR_DEVICE_NAME := YUPHORIA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
+
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
