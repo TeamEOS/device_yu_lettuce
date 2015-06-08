@@ -1,0 +1,20 @@
+[   
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_device_qcom_common",
+        "target_path": "device/qcom/common",
+        "revision":    "cm-12.1"
+    },
+    {
+        "remote":      "github",
+        "repository":  "CyanogenMod/android_kernel_cyanogen_msm8916",
+        "target_path": "kernel/cyanogen/msm8916",
+        "revision":    "cm-12.1"
+    },
+    {
+        "remote": "github",
+        "repository": "TheMuppets/proprietary_vendor_yu",
+        "target_path": "vendor/yu",
+        "revision": "cm-12.1"
+    }
+]
